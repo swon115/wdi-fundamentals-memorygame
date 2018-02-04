@@ -33,7 +33,7 @@ var checkForMatch = function () {
 
 
 var flipCard = function() {
-  var cardId = parseInt(this.getAttribute('data-id'),10);
+  var cardId = parseInt(this.getAttribute('data-id'));
   console.log("User flipped " + cards[cardId].rank);
   this.src = cards[cardId].cardImage;
   cardsInPlay.push(cards[cardId].rank);
